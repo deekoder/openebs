@@ -4,6 +4,7 @@ OpenEBS is a storage platform, written in GoLang, to deliver persistent block st
 
 #Components of OpenEBS platform
 OpenEBS platform contains three major components
+ 
  * Storage PODs or VSMs
  * An orchestration engine or VSM Scheduler called Maya
  * The OpenEBS hosts that provide the data store from either local disks or remote disks
@@ -21,13 +22,15 @@ The backend data store for Jiva containers come either through locally managed d
 
 #Built with the best tools 
 OpenEBS uses the best available infrastructure libraries underneath. Jiva (means "life" in Sanskrit) is the core software that runs inside the storage container. The core functionalities of Jiva include 
-* Block storage protocol (iSCSI/TCMU/NBD)
-* Replication
-* Snapshotting
-* Caching to NVMe
-* Encryption 
-* Backup/Restore
-* QoS 
+
+ * Block storage protocol (iSCSI/TCMU/NBD)
+ * Replication
+ * Snapshotting
+ * Caching to NVMe
+ * Encryption 
+ * Backup/Restore
+ * QoS 
+
 Jiva inherits majority of its capabilities from Rancher Longhorn (https://github.com/rancher/longhorn). QoS, Caching, Backup/Restore capabilities are being added to Jiva.
 
 Use | Library |  Logo     | Usage
